@@ -4,6 +4,9 @@ import Button from "./Button";
 export default {
   title: "Button",
   component: Button,
+  args:{
+    children:"Button"
+  }
 };
 
 export const Primary = () => <Button varient="primary">Primary</Button>;
@@ -16,11 +19,10 @@ const Template = (args) => <Button {...args} />;
 export const PrimaryA = Template.bind({});
 PrimaryA.args = {
   varient: "primary",
-  children: "Primary A",
+  // children: "Primary A",
 };
 
 export const PrimaryLong = Template.bind({});
 PrimaryLong.args = {
   ...PrimaryA.args,
-  children: "Primary Long btn",
 };
