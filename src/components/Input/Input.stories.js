@@ -5,6 +5,6 @@ export default {
   component: Input,
 };
 
-export const Large = () => <Input size="large" placeHolder="Large size" />;
-export const Medium = () => <Input size="medium" placeHolder="Medium size" />;
-export const Small = () => <Input size="small" placeHolder="Small size" />;
+export const Large = () => <Input size="large" placeholder="Large size" />;
+export const Medium = () => <Input size="medium" placeholder="Medium size" />;
+export const Small = () => <Input size="small" placeholder="Small size" />;
