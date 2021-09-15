@@ -9,6 +9,7 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-viewport",
     "@storybook/addon-knobs",
+    "@storybook/addon-a11y",
   ],
   webpackFinal: async (config) => {
     return {
