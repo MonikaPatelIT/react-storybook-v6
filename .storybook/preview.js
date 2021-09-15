@@ -1,5 +1,7 @@
 import { MINIMAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { withConsole } from "@storybook/addon-console";
+import { withKnobs } from "@storybook/addon-knobs";
+
 import { addDecorator } from "@storybook/react";
 import { ChakraProvider } from "@chakra-ui/react";
 import Center from "../src/components/Center/Center";
@@ -32,6 +34,7 @@ const customViewports = {
 };
 
 addDecorator((story, context) => withConsole()(story)(context));
+addDecorator(withKnobs);
 export const parameters = {
   viewport: { viewports: { ...MINIMAL_VIEWPORTS, ...customViewports } },
   actions: { argTypesRegex: "^on[A-Z].*" },

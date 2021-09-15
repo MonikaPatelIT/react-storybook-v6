@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/react";
-
 import { action } from "@storybook/addon-actions";
+import { text, boolean } from "@storybook/addon-knobs";
 
 export default {
   title: "Chakra/Button",
@@ -23,5 +23,11 @@ Success.args = {
 export const Danger = () => (
   <Button colorScheme="red" onClick={console.log("Danger")}>
     Danger
+  </Button>
+);
+
+export const Knobs = () => (
+  <Button disabled={boolean("Disabled", false)}>
+    {text("Label", "Button Label")}
   </Button>
 );

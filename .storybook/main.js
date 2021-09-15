@@ -8,6 +8,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
     "@storybook/addon-viewport",
+    "@storybook/addon-knobs",
   ],
   webpackFinal: async (config) => {
     return {
